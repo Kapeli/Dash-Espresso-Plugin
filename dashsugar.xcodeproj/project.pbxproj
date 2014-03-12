@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43C7B08818D10C7000812A5B /* Dash.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7B08718D10C7000812A5B /* Dash.m */; };
+		43C7B08B18D10C8000812A5B /* Actions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43C7B08918D10C8000812A5B /* Actions.xml */; };
+		43C7B08C18D10C8000812A5B /* Categories.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43C7B08A18D10C8000812A5B /* Categories.xml */; };
+		43E3DA3B18D0F05900672B87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E3DA3A18D0F05900672B87 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43C7B08618D10C7000812A5B /* Dash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dash.h; path = Dash/Dash.h; sourceTree = SOURCE_ROOT; };
+		43C7B08718D10C7000812A5B /* Dash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dash.m; path = Dash/Dash.m; sourceTree = SOURCE_ROOT; };
+		43C7B08918D10C8000812A5B /* Actions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Actions.xml; path = "Dash/XML Based/TextActions/Actions.xml"; sourceTree = SOURCE_ROOT; };
+		43C7B08A18D10C8000812A5B /* Categories.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Categories.xml; path = "Dash/XML Based/TextActions/Categories.xml"; sourceTree = SOURCE_ROOT; };
+		43C7B08D18D10C8900812A5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Dash/Info.plist; sourceTree = SOURCE_ROOT; };
+		43C7B08E18D10C8900812A5B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Dash/Prefix.pch; sourceTree = SOURCE_ROOT; };
+		43E3DA3718D0F05900672B87 /* dashsugar.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dashsugar.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E3DA3A18D0F05900672B87 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43E3DA3318D0F05900672B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E3DA3B18D0F05900672B87 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43E3DA2D18D0F05900672B87 = {
+			isa = PBXGroup;
+			children = (
+				43E3DA3C18D0F05900672B87 /* Dash */,
+				43E3DA3918D0F05900672B87 /* Frameworks */,
+				43E3DA3818D0F05900672B87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43E3DA3818D0F05900672B87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43E3DA3718D0F05900672B87 /* dashsugar.sugar */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43E3DA3918D0F05900672B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E3DA3A18D0F05900672B87 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E3DA3C18D0F05900672B87 /* Dash */ = {
+			isa = PBXGroup;
+			children = (
+				43C7B08618D10C7000812A5B /* Dash.h */,
+				43C7B08718D10C7000812A5B /* Dash.m */,
+				43E3DA4018D0F05900672B87 /* XML Based */,
+				43E3DA3D18D0F05900672B87 /* Supporting Files */,
+			);
+			name = Dash;
+			path = dashsugar;
+			sourceTree = "<group>";
+		};
+		43E3DA3D18D0F05900672B87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43C7B08D18D10C8900812A5B /* Info.plist */,
+				43C7B08E18D10C8900812A5B /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43E3DA4018D0F05900672B87 /* XML Based */ = {
+			isa = PBXGroup;
+			children = (
+				43E3DA4C18D0F2DB00672B87 /* TextActions */,
+			);
+			path = "XML Based";
+			sourceTree = "<group>";
+		};
+		43E3DA4C18D0F2DB00672B87 /* TextActions */ = {
+			isa = PBXGroup;
+			children = (
+				43C7B08918D10C8000812A5B /* Actions.xml */,
+				43C7B08A18D10C8000812A5B /* Categories.xml */,
+			);
+			path = TextActions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43E3DA3618D0F05900672B87 /* dashsugar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E3DA4318D0F05900672B87 /* Build configuration list for PBXNativeTarget "dashsugar" */;
+			buildPhases = (
+				43E3DA3218D0F05900672B87 /* Sources */,
+				43E3DA3318D0F05900672B87 /* Frameworks */,
+				43E3DA3418D0F05900672B87 /* Resources */,
+				43E3DA3518D0F05900672B87 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dashsugar;
+			productName = dashsugar;
+			productReference = 43E3DA3718D0F05900672B87 /* dashsugar.sugar */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43E3DA2E18D0F05900672B87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 43E3DA3118D0F05900672B87 /* Build configuration list for PBXProject "dashsugar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43E3DA2D18D0F05900672B87;
+			productRefGroup = 43E3DA3818D0F05900672B87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43E3DA3618D0F05900672B87 /* dashsugar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43E3DA3418D0F05900672B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C7B08B18D10C8000812A5B /* Actions.xml in Resources */,
+				43C7B08C18D10C8000812A5B /* Categories.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43E3DA3518D0F05900672B87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy all files in the \"XML Based\" folder into the root of the final Sugar\nrsync -a --exclude=\".*\"  \"$SRCROOT/$PRODUCT_NAME/XML Based/\" \"$TARGET_BUILD_DIR/$WRAPPER_NAME/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43E3DA3218D0F05900672B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C7B08818D10C7000812A5B /* Dash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		43E3DA4118D0F05900672B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BUILD_32_LIKE_64;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		43E3DA4218D0F05900672B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BUILD_32_LIKE_64;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		43E3DA4418D0F05900672B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				ESPRESSO_PATH = /Applications/Espresso.app;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dash/Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(ESPRESSO_PATH)/Contents/Headers";
+				INFOPLIST_FILE = Dash/Info.plist;
+				PRODUCT_NAME = Dash;
+				WRAPPER_EXTENSION = sugar;
+			};
+			name = Debug;
+		};
+		43E3DA4518D0F05900672B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ESPRESSO_PATH = /Applications/Espresso.app;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dash/Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(ESPRESSO_PATH)/Contents/Headers";
+				INFOPLIST_FILE = Dash/Info.plist;
+				PRODUCT_NAME = Dash;
+				WRAPPER_EXTENSION = sugar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43E3DA3118D0F05900672B87 /* Build configuration list for PBXProject "dashsugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E3DA4118D0F05900672B87 /* Debug */,
+				43E3DA4218D0F05900672B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E3DA4318D0F05900672B87 /* Build configuration list for PBXNativeTarget "dashsugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E3DA4418D0F05900672B87 /* Debug */,
+				43E3DA4518D0F05900672B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43E3DA2E18D0F05900672B87 /* Project object */;
+}

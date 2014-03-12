@@ -1,0 +1,7 @@
+<action-recipes>
+    <action id="com.kapeli.dashsugar" category="actions.text.dash">
+        <class>Dash</class>
+        <title>Look Up in Dash</title>
+        <key-equivalent>control h</key-equivalent>
+    </action>
+</action-recipes>
