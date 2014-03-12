@@ -95,36 +95,52 @@
     return YES;
 }
 
+- (BOOL)dashIsInstalled
+{
+    if(![[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:@"com.kapeli.dash"] && ![[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:@"com.kapeli.dashbeta"])
+    {
+        if([[NSAlert alertWithMessageText:@"Dash" defaultButton:@"Download Dash" alternateButton:@"Cancel" otherButton:nil informativeTextWithFormat:@"Dash is not installed. Please download Dash."] runModal] == NSAlertDefaultReturn)
+        {
+            [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://kapeli.com/dash"]];
+        }
+        return NO;
+    }
+    return YES;
+}
+
 - (BOOL)performActionWithContext:(id)context error:(NSError **)outError
 {
     @try {
-        NSArray *ranges = [context selectedRanges];
-        if(ranges.count)
+        if([self dashIsInstalled])
         {
-            NSRange range = [[ranges objectAtIndex:0] rangeValue];
-            NSString *string = [context string];
-            if(!string.length)
+            NSArray *ranges = [context selectedRanges];
+            if(ranges.count)
             {
-                return NO;
+                NSRange range = [[ranges objectAtIndex:0] rangeValue];
+                NSString *string = [context string];
+                if(!string.length)
+                {
+                    return NO;
+                }
+                NSString *searchString = nil;
+                if(range.length)
+                {
+                    searchString = [string substringWithRange:range];
+                }
+                else
+                {
+                    NSString *word = [string getWordAtIndex:range.location];
+                    searchString = word;
+                }
+                if(!searchString)
+                {
+                    return NO;
+                }
+                NSPasteboard *pboard = [NSPasteboard pasteboardWithUniqueName];
+                [pboard setString:searchString forType:NSStringPboardType];
+                NSPerformService(@"Look Up in Dash", pboard);
+                return YES;
             }
-            NSString *searchString = nil;
-            if(range.length)
-            {
-                searchString = [string substringWithRange:range];
-            }
-            else
-            {
-                NSString *word = [string getWordAtIndex:range.location];
-                searchString = word;
-            }
-            if(!searchString)
-            {
-                return NO;
-            }
-            NSPasteboard *pboard = [NSPasteboard pasteboardWithUniqueName];
-            [pboard setString:searchString forType:NSStringPboardType];
-            NSPerformService(@"Look Up in Dash", pboard);
-            return YES;
         }
     }
     @catch(NSException *exception) { }
