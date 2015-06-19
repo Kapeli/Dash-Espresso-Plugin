@@ -20,7 +20,7 @@
 		43C7B08A18D10C8000812A5B /* Categories.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Categories.xml; path = "Dash/XML Based/TextActions/Categories.xml"; sourceTree = SOURCE_ROOT; };
 		43C7B08D18D10C8900812A5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Dash/Info.plist; sourceTree = SOURCE_ROOT; };
 		43C7B08E18D10C8900812A5B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Dash/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		43E3DA3718D0F05900672B87 /* dashsugar.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dashsugar.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E3DA3718D0F05900672B87 /* Dash.sugar */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dash.sugar; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E3DA3A18D0F05900672B87 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -48,7 +48,7 @@
 		43E3DA3818D0F05900672B87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43E3DA3718D0F05900672B87 /* dashsugar.sugar */,
+				43E3DA3718D0F05900672B87 /* Dash.sugar */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 			);
 			name = dashsugar;
 			productName = dashsugar;
-			productReference = 43E3DA3718D0F05900672B87 /* dashsugar.sugar */;
+			productReference = 43E3DA3718D0F05900672B87 /* Dash.sugar */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
